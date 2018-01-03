@@ -16,7 +16,16 @@
         android:text="Hello World! 1º actividad" />
 
     <Button
+        android:id="@+id/irPrimeraVentana"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/btnGoNexPage"/>
+        android:layout_height="wrap_content"
+        android:text="Primera ventana"
+        />
+
+    <Button
+        android:id="@+id/irSegundaVentana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="Segunda ventana"
+        />
 </RelativeLayout>

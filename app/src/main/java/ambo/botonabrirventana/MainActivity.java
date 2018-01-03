@@ -23,10 +23,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v){
 
         switch (v.getId()){
-            case R.id.btnGoNexPage:
+            case R.id.irPrimeraVentana:
                 Intent intent=new Intent(this, Main2Activity.class);
                 startActivity(intent);
                 break;
+            case R.id.irSegundaVentana:
 
             default:
                 break;

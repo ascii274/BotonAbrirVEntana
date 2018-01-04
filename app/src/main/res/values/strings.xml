@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BotonAbrirVentana</string>
+    <string name="txtPrimeraVentana">Estas en la primera ventana</string>
+    <string name="txtSegundaVentana">Estas en la segunda ventana</string>
+
+    <string name="txtTerceraVentana">Estas en la tercera ventana</string>
+
+
 </resources>

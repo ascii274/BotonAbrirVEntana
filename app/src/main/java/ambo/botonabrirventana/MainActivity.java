@@ -7,15 +7,17 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    Button button;
+    Button button,button2;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button=(Button) findViewById(R.id.btnGoNexPage);
+        button=(Button) findViewById(R.id.irPrimeraVentana);
         button.setOnClickListener(this);
+        button2=(Button) findViewById(R.id.irSegundaVentana);
+        button2.setOnClickListener(this);
 
 
     }
@@ -28,7 +30,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.irSegundaVentana:
-
+                Intent intent2=new Intent(this, Main3Activity.class);
+                startActivity(intent2);
             default:
                 break;
         }

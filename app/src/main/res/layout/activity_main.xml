@@ -26,6 +26,6 @@
         android:id="@+id/irSegundaVentana"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="Segunda ventana"
+        android:text="Segunda Ventana"
         />
 </RelativeLayout>

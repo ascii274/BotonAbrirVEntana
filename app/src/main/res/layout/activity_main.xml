@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -11,7 +11,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ambo.botonabrirventana.MainActivity">
-
 
     <Button
         android:id="@+id/irPrimeraVentana"
@@ -40,11 +39,11 @@
         android:id="@+id/irTerceraVentana"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/irPrimeraVentana"
-        android:layout_marginTop="28dp"
-        android:text="Segunda Ventana"
-        app:layout_constraintTop_toBottomOf="@+id/irSegundaVentana"
 
-        />
-</android.support.constraint.ConstraintLayout>
+        android:layout_below="@+id/irSegundaVentana"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Tercera Ventana"
+        app:layout_constraintTop_toBottomOf="@+id/irSegundaVentana" />
+
+</RelativeLayout>

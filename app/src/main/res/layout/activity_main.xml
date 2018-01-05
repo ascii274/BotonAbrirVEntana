@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -36,14 +36,23 @@
         />
 
     <Button
-        android:id="@+id/irTerceraVentana"
+    android:id="@+id/irTerceraVentana"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/irSegundaVentana"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="13dp"
+    android:text="Tercera Ventana"
+    app:layout_constraintTop_toBottomOf="@+id/irSegundaVentana" />
+
+    <Button
+        android:id="@+id/irCuartaVentana"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_below="@+id/irSegundaVentana"
+        android:layout_below="@+id/irTerceraVentana"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"
         android:text="Tercera Ventana"
-        app:layout_constraintTop_toBottomOf="@+id/irSegundaVentana" />
+        app:layout_constraintTop_toBottomOf="@+id/irTerceraVentana" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
